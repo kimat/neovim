@@ -29,7 +29,7 @@ elseif executable('xsel')
   let s:copy['*'] = 'xsel -i -p'
   let s:paste['*'] = 'xsel -o -p'
 else
-  echom 'clipboard: No shell command for communicating with the clipboard found.'
+  silent echom 'clipboard: No shell command for communicating with the clipboard found.'
   finish
 endif
 
